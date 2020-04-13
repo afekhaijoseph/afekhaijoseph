@@ -1,0 +1,263 @@
+*{
+   box-sizing:border-box;
+   overflow-x:hidden;
+}
+body{
+  margin:0;
+  padding:0;
+  text-align:center;
+  font-family:lato;
+  
+}
+.container{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+#web-nav{
+  display:none;
+}
+span{
+  color:white;
+}
+h2{
+  margin-top:120px;
+  text-transform: uppercase;
+  font-family:lato;
+  padding:0 5px;
+}
+h3{
+    color:black;
+    margin-top:120px;
+    font-size: calc(3px + 5vw);
+    
+}
+#main{
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5),);
+  background-image: url(dark.jpg);
+  background-position:center center;
+  background-repeat:none;
+  background-size:cover;
+  height:90vh;
+  width:auto;
+  color:#fff;
+  margin:0;
+  border-radius: 0 0 45px 45px;
+  transition: margin-left .5s;
+  padding: 16px;
+  overflow:hidden;
+}
+#main p{
+  font-size:calc(3px + 5vw);
+  font-family:lato;
+  margin-top:60px;
+  padding-left: 0 16px 0 8px;
+  text-align:center;
+  
+}  
+
+#click{
+    margin-top:220px;
+    background:none;
+    color:rgba(44, 235, 155, 0.801);
+    border:1px solid rgba(44, 235, 155, 0.801);
+    font-size:20px;
+    padding:10px;
+    border-radius:30px;
+    transition: 0.5s;
+    
+}
+#click:hover{
+  transform: rotate(360deg);
+}
+
+#sentence{
+    font-size:calc(4px + 3vw);
+}
+i{
+  width:100%;
+  height:auto;
+  font-size:calc(10px + 45vw);
+  color:rgba(29, 228, 145, 0.356);
+  margin:0;
+  padding:0;
+}
+figcaption{
+  font-size:calc(4px + 4vw);
+}
+#works{
+  text-align: center;
+  padding-bottom: 10%;
+}
+#works h4{
+  margin-top:70px;
+  text-decoration: none;
+  font-size: calc(3px + 4vw);
+  text-align: center;
+}
+#works a{
+  text-decoration:none;
+  color: #000;
+  font-size: calc(3px + 3vw);
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(194, 190, 190,);
+  /*rgb(0,0,0);*/
+  background-color: rgba(194, 190, 190, 0.9);
+  /*rgba(0,0,0, 0.9);*/
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: rgb(71, 71, 71);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.openbtn{
+  color:rgba(44, 235, 155, 0.801);
+  float:left;
+  font-size: calc(4vw + 6vw);
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+@media (max-width:375px) {
+  #click{
+    margin-top: 130px;
+  }
+}
+@media (max-width:360px) {
+  #click{
+    margin-top: 100px;
+  }
+}
+@media (max-width:320px) {
+  #click{
+    margin-top: 60px;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+@media (min-width:768px) and (max-width:1024px){
+  h2{
+    font-size: calc(4px + 4vw);
+    margin-top:200px;
+  }
+  #click{
+    margin-top: 400px;
+    font-size: 40px;
+    padding: 15px;
+    border-radius:50px;
+  }
+.openbtn{
+  display:none;
+}
+#web-nav{
+  display:block;
+  float: right;
+}
+#web-nav a{
+  display: inline-block;
+  color:rgba(44, 235, 155, 0.801);
+  font-size: calc(4px + 3vw);
+  text-decoration: none;
+  padding: 0 7px;
+}
+}
+@media(min-width:768px) and (max-width: 800px){
+  #click{
+    margin-top: 270px;
+    font-size: 30px;
+    padding: 11px;
+  }
+}
+@media(min-width:1040px){
+  h2{
+    font-size: calc(2px + 3vw);
+    margin-top:100px;
+  }
+  #main p{
+    font-size: calc(4px + 2vw);
+  }
+  #click{
+    margin-top: 170px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius:50px;
+  }
+.openbtn{
+  display:none;
+}
+  #web-nav{
+    display:block;
+    float: right;
+  }
+  #web-nav a{
+    display: inline-block;
+    color:rgba(44, 235, 155, 0.801);
+    font-size: calc(7px + 1vw);
+    text-decoration: none;
+    padding: 0 7px;
+  }
+  #web-nav a:hover{
+    color:#fff;
+  }
+  figure{
+    display:inline-block;
+    width:25%;
+    height:auto;
+  }
+  i{
+  display:inline-block;
+  font-size:calc(15px + 15vw);
+  color:rgba(29, 228, 145, 0.356);
+}
+figcaption{
+  font-size:calc(3px + 1vw);
+}
+h3{
+  font-size: calc(3px + 3vw);
+}
+#skillset p{
+  font-size: calc(3px + 2vw);
+}
+#works h4{
+  font-size: calc(3px + 3vw);
+}
+#works a{
+  font-size: calc(3px + 2vw);
+}
+}
