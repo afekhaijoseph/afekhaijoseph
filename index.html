@@ -11,28 +11,34 @@
     <link rel="stylesheet" href="style.css">
     <title>Afekhai</title>
 </head>
-
   <body>
-    <div class="container">
+    <div class="container" id="home">
       <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
+          <a href="#home" onclick="closeNav()">Home</a>
           <a href="#skillset" onclick="closeNav()">My skills</a>
-          <a href="#works" onclick="closeNav()">My work</a>
+          <a href="#job" onclick="closeNav()">My work</a>
         </div>
       </div>
       <div id="main">
-        <div id = web-nav>
-          <a href="#skillset">My skills</a>
-          <a href="#works">My work</a>
+        <div id="navigate">
+          <div id = web-nav>
+            <a href="#home">Home</a>
+            <a href="#skillset">My skills</a>
+            <a href="#job">My work</a>
+          </div>
         </div>
-        <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()"> &#9776; </span>
+        <div id="ham">
+          <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()"> &#9776; </span>
+        </div>
+        
         <h2>I am Afekhai Joseph and I am a software developer</h2>
         <p>I find solutions to problems and bring your ideas to life. Software development is art which i am in love and prolific with.</p>
         <a href="#skillset"><button id="click">Click</button></a> 
     </div>
            <div id="skillset">
-                  <h3 id="list">List of skillsets</h3>
+                  <h3 id="list">List of skills</h3>
                   <p id="sentence">Here is the list of languagues I am proficient in</p>
                   <figure>
                     <i class="fab fa-html5"></i>
@@ -46,13 +52,12 @@
                     <i class="fab fa-js-square"></i>
                     <figcaption>Javascript</figcaption>
                   </figure>
-                  
            </div>
            <div id="works">
             <div>
               <h4>Previous works i have done</h4>
             </div>
-             <a href="www.preenkleen.com">www.preenkleen.com</a>
+             <a href="www.preenkleen.com" id="job">www.preenkleen.com</a>
         </div>
       </div>
   </body>
